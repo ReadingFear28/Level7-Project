@@ -21,4 +21,5 @@ dependencies {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 	testImplementation 'io.projectreactor:reactor-test'
+	implementation 'org.json:json:20220320'
 }
