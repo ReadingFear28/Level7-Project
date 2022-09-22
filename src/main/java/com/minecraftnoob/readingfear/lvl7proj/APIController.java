@@ -22,6 +22,7 @@ public class APIController {
 		String Profile = Service.GetProfile(Query);
 		if (Profile.equals("Error"))
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Player not found");
-		return Profile;
+		System.out.println(Profile);
+		return "[" + Profile + "]";
 	}
 }
